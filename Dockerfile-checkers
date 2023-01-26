@@ -19,7 +19,7 @@ RUN apt-get install curl git
 RUN curl -L https://get.ignite.com/cli@v0.22.1! | bash
 
 # Copy local repository
-ADD b9-checkers-academy-draft /home/checkers
+ADD checkers /home/checkers
 
 # Copy Test
 COPY ./test.sh /home/checkers

@@ -6,7 +6,7 @@ services:
 
   leaderboard:
     container_name: leaderboard
-    image: "leaderboard"
+    image: "leaderboard_img"
 
     ports:
       - "26656:26657"
@@ -14,11 +14,11 @@ services:
       - "4499:4500"
 
     networks:
-      - leaderboarddemo
+      - checkersdemo
 
   checkers:
     container_name: checkers
-    image: "checkers"
+    image: "checkers_img"
 
     ports:
       - "26657:26657"
@@ -26,16 +26,16 @@ services:
       - "4500:4500"
 
     networks:
-      - leaderboarddemo
+      - checkersdemo
 
   relayer:
     container_name: relayer
-    image: "relayer"
+    image: "relayer_img"
     tty: true
     stdin_open: true
 
     networks:
-      - leaderboarddemo
+      - checkersdemo
 
 networks:
-    leaderboarddemo:
+    checkersdemo:
