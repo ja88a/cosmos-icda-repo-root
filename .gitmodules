@@ -1,0 +1,6 @@
+[submodule "checkers"]
+	path = checkers
+	url = https://github.com/ja88a/cosmos-icda-checkers-chain
+[submodule "leaderboard"]
+	path = leaderboard
+	url = https://github.com/ja88a/cosmos-icda-leaderboard-ibc
